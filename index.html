@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQUERY -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- FONT AWERSOME -->
+    <link rel="stylesheet "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+   
+    <!-- Animation JS (animate.style) -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo.svg">
+
+    <title>Marco Lovato Page</title>
+
+</head>
+<body>
+   
+    <header class="header" id="header">
+        <nav class="nav">
+
+            <a href="https://marcolovatopage.netlify.app/" >
+                <div class="nav__logo">
+                    <svg width="348" height="414" viewBox="0 0 348 414" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M174 29.1234L25.7949 117.684V296.316L174 384.877L322.205 296.316V117.684L174 29.1234ZM347.205 103.5L174 0L0.794922 103.5V310.5L174 414L347.205 310.5V103.5Z" fill="#6E57E0"/>
+                        <path d="M261.834 122V295H239.084V166L181.584 295H165.584L107.834 165.75V295H85.084V122H109.584L173.584 265L237.584 122H261.834Z" fill="#6E57E0"/>
+                        </svg>
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <ion-icon name="home-outline" class="nav__icon"></ion-icon>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <ion-icon name="person-outline" class="nav__icon"></ion-icon>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <ion-icon name="briefcase-outline" class="nav__icon"></ion-icon>Work
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <ion-icon name="chatbubble-outline" class="nav__icon"></ion-icon>Contact
+                        </a>
+                    </li>
+                   
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>   
+
+            <div class="nav__btns">
+                <ul class="social__icons__header">
+                
+                    <li class="nav__item">
+                        <a href="https://github.com/Novecento201" target="_blank" class="nav__link">
+                            <i class="uil uil-github-alt nav__icon"></i >
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="https://www.linkedin.com/in/marco-lovato-3816a3229/"  target="_blank"class="nav__link">
+                            <i class="uil uil-linkedin-alt nav__icon"></i>
+                            
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="https://discordapp.com/users/744882319717826620 "  target="_blank"class="nav__link">
+                            <i class="fab fa-discord nav__icon" ></i>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                <!-- THEME BUTTON-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+
+                
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home section"id="home">
+            <div class="wrapper__home">
+                <div class="content__home">
+                    <h2 class="title__homepage">Hi, I'm</h2>
+                    <!-- Marco -->
+                        <svg id="logo"width="100%"  viewBox="0 0 439 102" fill="none" xmlns="http://www.w3.org/2000/svg" overflow="visible" >
+                            
+                            <!-- M -->
+                            <path d="M102.576 0.36199V100H89.4717V25.696L56.3517 100H47.1357L13.8717 25.552V100H0.7677V0.35199H14.8797L51.7437 82.72L88.6077 0.35199H102.576Z" stroke="var(--first-color)" stroke-width="5" id="M" />
+
+                            <!-- A -->
+                            <path d="M119.903 60.256C119.903 52.192 121.535 45.136 124.799 39.088C128.063 32.944 132.527 28.192 138.191 24.832C143.951 21.472 150.335 19.792 157.343 19.792C164.255 19.792 170.255 21.28 175.343 24.256C180.431 27.232 184.223 30.976 186.719 35.488V21.088H199.967V100H186.719V85.312C184.127 89.92 180.239 93.76 175.055 96.832C169.967 99.808 164.015 101.296 157.199 101.296C150.191 101.296 143.855 99.568 138.191 96.112C132.527 92.656 128.063 87.808 124.799 81.568C121.535 75.328 119.903 68.224 119.903 60.256ZM186.719 60.4C186.719 54.448 185.519 49.264 183.119 44.848C180.719 40.432 177.455 37.072 173.327 34.768C169.295 32.368 164.831 31.168 159.935 31.168C155.039 31.168 150.575 32.32 146.543 34.624C142.511 36.928 139.295 40.288 136.895 44.704C134.495 49.12 133.295 54.304 133.295 60.256C133.295 66.304 134.495 71.584 136.895 76.096C139.295 80.512 142.511 83.92 146.543 86.32C150.575 88.624 155.039 89.776 159.935 89.776C164.831 89.776 169.295 88.624 173.327 86.32C177.455 83.92 180.719 80.512 183.119 76.096C185.519 71.584 186.719 66.352 186.719 60.4Z" stroke="var(--first-color)" stroke-width="5" id="A"/>
+
+                            <!-- R -->
+                            <path d="M235.215 33.904C237.519 29.392 240.783 25.888 245.007 23.392C249.327 20.896 254.559 19.648 260.703 19.648V33.184H257.247C242.559 33.184 235.215 41.152 235.215 57.088V100H222.111V21.088H235.215V33.904Z" stroke="var(--first-color)" stroke-width="5" id="R"/>
+
+                            <!-- C -->
+                            <path d="M270.934 60.4C270.934 52.24 272.566 45.136 275.83 39.088C279.094 32.944 283.606 28.192 289.366 24.832C295.222 21.472 301.894 19.792 309.382 19.792C319.078 19.792 327.046 22.144 333.286 26.848C339.622 31.552 343.798 38.08 345.814 46.432H331.702C330.358 41.632 327.718 37.84 323.782 35.056C319.942 32.272 315.142 30.88 309.382 30.88C301.894 30.88 295.846 33.472 291.238 38.656C286.63 43.744 284.326 50.992 284.326 60.4C284.326 69.904 286.63 77.248 291.238 82.432C295.846 87.616 301.894 90.208 309.382 90.208C315.142 90.208 319.942 88.864 323.782 86.176C327.622 83.488 330.262 79.648 331.702 74.656H345.814C343.702 82.72 339.478 89.2 333.142 94.096C326.806 98.896 318.886 101.296 309.382 101.296C301.894 101.296 295.222 99.616 289.366 96.256C283.606 92.896 279.094 88.144 275.83 82C272.566 75.856 270.934 68.656 270.934 60.4Z" stroke="var(--first-color)" stroke-width="5" id="C"/>
+
+                            <!-- O -->
+                            <path d="M397.715 101.296C390.323 101.296 383.603 99.616 377.555 96.256C371.603 92.896 366.899 88.144 363.443 82C360.083 75.76 358.403 68.56 358.403 60.4C358.403 52.336 360.131 45.232 363.587 39.088C367.139 32.848 371.939 28.096 377.987 24.832C384.035 21.472 390.803 19.792 398.291 19.792C405.779 19.792 412.547 21.472 418.595 24.832C424.643 28.096 429.395 32.8 432.851 38.944C436.403 45.088 438.179 52.24 438.179 60.4C438.179 68.56 436.355 75.76 432.707 82C429.155 88.144 424.307 92.896 418.163 96.256C412.019 99.616 405.203 101.296 397.715 101.296ZM397.715 89.776C402.419 89.776 406.835 88.672 410.963 86.464C415.091 84.256 418.403 80.944 420.899 76.528C423.491 72.112 424.787 66.736 424.787 60.4C424.787 54.064 423.539 48.688 421.043 44.272C418.547 39.856 415.283 36.592 411.251 34.48C407.219 32.272 402.851 31.168 398.147 31.168C393.347 31.168 388.931 32.272 384.899 34.48C380.963 36.592 377.795 39.856 375.395 44.272C372.995 48.688 371.795 54.064 371.795 60.4C371.795 66.832 372.947 72.256 375.251 76.672C377.651 81.088 380.819 84.4 384.755 86.608C388.691 88.72 393.011 89.776 397.715 89.776Z" stroke="var(--first-color)" stroke-width="5" id="O"/>
+                        </svg>
+
+                    <h2 class="title__homepage">The web developer you are looking for.</h2>
+
+                    <h3 class="carousel__words">
+                        I&nbsp;am&nbsp;a
+                    <ul class="word-rotate">
+                        <li>web developer</li>
+                        <li>pc gamer</li>
+                        <li>sporty guy</li>
+                        <li>IT nerd</li>
+                        
+                    </ul>
+                    </h3>
+
+                    <div class="container__icon_home">
+
+                        <div class="icon__fornomove">
+                            <a href="https://github.com/Novecento201" target="_blank" class="icon__home"><i class="fab fa-github"></i></a>
+                        </div>
+                        
+                        <div class="icon__fornomove">
+                            <a href="https://www.linkedin.com/in/marco-lovato-3816a3229/"  target="_blank"class="icon__home" ><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        
+                        <div class="icon__fornomove">
+                            <a href="https://discordapp.com/users/744882319717826620"  target="_blank"class="icon__home" ><i class="fab fa-discord"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <h3 class="center__button"><a href="#contact" class="button button--flex">Contact me</a></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="about section" id="about">
+            <div class="wrapper__about">
+                <h2 class="section__title">About me</h2>
+                
+                <div class="content__about">
+                    
+                    <div class="container__subtitle ">
+                            
+                        <div class="section__subtitle">W</div>
+                        <div class="section__subtitle">h</div>
+                        <div class="section__subtitle">o</div>
+                        <div class="section__subtitle">&nbsp;</div>
+                        
+                        <div class="section__subtitle">i</div>
+                        <div class="section__subtitle">s</div>
+                        
+                        <div class="section__subtitle">&nbsp;</div>
+                        <div class="section__subtitle">M</div>
+                        <div class="section__subtitle">a</div>
+                        <div class="section__subtitle">r</div>
+                        <div class="section__subtitle">c</div>
+                        <div class="section__subtitle">o</div>
+                        <div class="section__subtitle">?</div>
+                            
+                    </div>
+
+                    <div class="blob">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"  class="about__blob">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: var(--first-color-lighter)"></stop>
+                                    <stop offset="100%" style="stop-color: var(--first-color);"></stop>
+                                </linearGradient>
+
+                                
+                                <filter id="f1" x="0" y="0">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.2" />
+                                </filter>
+                            </defs>
+                            <mask id="mask0" mask-type="alpha">
+                                <path  fill="url(#gradient)"transform="translate(100 100)" filter="url(#f1)">
+                                    <animate attributeName="d"
+                                    dur="7000ms"
+                                    repeatCount="indefinite"
+                                    values="
+                                    
+                                    M73,-21.6C82.7,6.1,70.4,43,46.4,59.4C22.4,75.7,-13.2,71.5,-38.3,53.1C-63.5,34.8,-78.1,2.3,-70,-23.2C-61.8,-48.7,-30.9,-67.3,0.4,-67.4C31.7,-67.5,63.3,-49.2,73,-21.6Z;
+
+                                    M68.6,-22.6C77.4,4.7,65,38.6,41.3,55.6C17.5,72.6,-17.7,72.7,-40.3,56.1C-62.9,39.5,-73,6.3,-64.2,-21C-55.3,-48.4,-27.7,-69.8,1.1,-70.1C29.9,-70.5,59.8,-49.8,68.6,-22.6Z;                
+
+                                    M73,-21.6C82.7,6.1,70.4,43,46.4,59.4C22.4,75.7,-13.2,71.5,-38.3,53.1C-63.5,34.8,-78.1,2.3,-70,-23.2C-61.8,-48.7,-30.9,-67.3,0.4,-67.4C31.7,-67.5,63.3,-49.2,73,-21.6Z;
+
+                                    ">
+                                    </animate>
+                                    
+                                </path>
+                            </mask>
+
+                            <g mask="url(#mask0)">
+                                <path  fill="url(#gradient)"transform="translate(100 100)" filter="url(#f1)">
+                                    <animate attributeName="d"
+                                    dur="7000ms"
+                                    repeatCount="indefinite"
+                                    values="
+                                
+                                    M73,-21.6C82.7,6.1,70.4,43,46.4,59.4C22.4,75.7,-13.2,71.5,-38.3,53.1C-63.5,34.8,-78.1,2.3,-70,-23.2C-61.8,-48.7,-30.9,-67.3,0.4,-67.4C31.7,-67.5,63.3,-49.2,73,-21.6Z;
+
+                                    M68.6,-22.6C77.4,4.7,65,38.6,41.3,55.6C17.5,72.6,-17.7,72.7,-40.3,56.1C-62.9,39.5,-73,6.3,-64.2,-21C-55.3,-48.4,-27.7,-69.8,1.1,-70.1C29.9,-70.5,59.8,-49.8,68.6,-22.6Z;
+
+                                    M73,-21.6C82.7,6.1,70.4,43,46.4,59.4C22.4,75.7,-13.2,71.5,-38.3,53.1C-63.5,34.8,-78.1,2.3,-70,-23.2C-61.8,-48.7,-30.9,-67.3,0.4,-67.4C31.7,-67.5,63.3,-49.2,73,-21.6Z;
+
+                                    ">
+                                    </animate>
+                                </path>
+                                <image  class="about__blob-img" x=45 y=25 href="assets/img/Profilo.png"/>
+                            </g>
+                            
+                        </svg>
+                    </div>
+
+                    <div class="container__text__about">
+
+                        <h4 class="title__text">
+                            A creative web developer who loves to bring ideas to life
+                        </h4>
+
+                        <p class="text__about">
+                            I'm just a knowledge hungry guy who loves to make things that live on internet.
+                        </p>
+
+                        <p class="text__about">
+                            My interest in coding started in 2021,  
+                            when I discovered that in this work, you can create anything you can think of from nothing, I fell in love with that.
+                        </p>
+
+                        <p class="text__about text__about__button">
+                            I'm happiest when I'm creating, learning, doing sport and thinking about how to make things better.
+
+                            <button class="button__text__about modal-button">
+                                <a href="#myModal1" >
+                                    More about me...
+                                </a>
+                            </button>
+
+                        </p>
+
+                        <p class="text__about ">
+                            I'm currently studying 
+
+                            <button class="modal-button">
+                                <a href="#myModal2" >
+                                web developing
+                                </a>
+                            </button>
+                            
+                            (the full stack path) from 
+
+                            <a href="https://talent.start2impact.it/profile/marco-lovato-a869" target="_blank" >
+                                Start2Impact
+                                </a>
+                                .
+                            </p>
+
+                        <p class="text__about text__about__button">I'm available for web developing position job, feel free to reach out.
+                            <button class="button__text__about">
+                                <a href="#contact">
+                                    Get in touch!
+                                </a>
+                            </button>
+                        </p>
+
+                    </div>
+
+                    <div class="container__swiper">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="box__information">
+                                        <h3 class="box__name">About me</h3>
+                                        <ion-icon name="person-circle-outline" class="icon__box"></ion-icon>
+                                        <button 
+                                        class="button  box__button  modal-button button--flex"
+                                        href="#myModal1"
+                                        >Open</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box__information">
+                                        <h3 class="box__name">Skills</h3>
+                                        <ion-icon name="school-outline" class="icon__box"></ion-icon>
+                                        <button
+                                        class="button box__button  modal-button button--flex"
+                                        href="#myModal2" 
+                                        >Open</button> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box__information">
+                                        <h3 class="box__name">Goals</h3>
+                                        <ion-icon name="rocket-outline" class="icon__box"></ion-icon>
+                                        <button 
+                                        class=" button box__button  modal-button button--flex"
+                                        href="#myModal3"
+                                        >Open</button>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                
+                    </div>
+
+                </div>
+
+                <!-- MODAL ABOUT ME -->
+                <div class="modal" id="myModal1">
+                    <!-- Modal content -->
+                    <div class="modal__content__aboutme">
+
+                        <div class="modal__header">
+                            <h2>Biography</h2>
+                            <span class="close">×</span>
+                        </div>
+
+                        <p class="modal__upgrade">Last update: 23/01/2022</p>
+
+                        <div class="modal__body__about">
+                            <div class="img__modal">
+                                <img src="/assets/img/habitat.jpeg" alt="">
+                                <p class="underimg">[ Me in my habitat ]</p>
+                            </div>
+
+                            <ul class="biography">
+                                <li><i class="q">Name :</i> Marco</li>
+                                <li><i class="q">Surname :</i> Lovato</li>
+                                <li><i class="q">Born :</i> Italy 2001</li>
+                                <li><i class="q">Nationality :</i> Italian</li>
+                                <li><i class="q">Online name :</i> Novecento</li>
+                                <li><i class="q">Personality :</i> <a href="https://www.16personalities.com/profiles/fdd6b24c5d3fb" target="_blank" class=""> INTJ</a></li>
+                                <li><i class="q">Superpower :</i>  Grindset</li>
+                                <li><i class="q">Hobby :</i> I like cycling, training, reading (self-improvment books), play online games (moba / mmorpg / fps). </li>
+                                <li><i class="q">Interest :</i> Self improvment, money managment, mma fights, metaverse, coding stuff.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- MODAL SKILLS -->
+                <div class="modal" id="myModal2">
+                    <!-- Modal content -->
+                    <div class="modal__content__skills">
+
+                        <div class="modal__header">
+                            <h2>Skills</h2>
+                            <span class="close">×</span>
+                        </div>
+
+                        <p class="modal__upgrade">Last update: 23/01/2022</p>
+
+                        <div class="modal__body__skills">
+                            
+                            <div class="skills__container">
+
+                                <!-- SKILL 1 -->
+                                <div class="skills__content skills__open">
+                                    <div class="skills__header">
+                                        <i class="uil uil-head-side skills__icon"></i>
+        
+                                        <div>
+                                            <h1 class="skills__title">Interpersonal</h1>
+                                            
+                                        </div>
+                                        <i class="uil uil-angle-down skills__arrow"></i>
+                                    </div>
+        
+                                    <ul class="skills__list">
+                                        <li>Reliability</li>
+                                        <li>Effective communication</li>
+                                        <li>Open-mindedness</li>
+                                        <li>Teamworking</li>
+                                        <li>Problem-solving</li>
+                                        <li>Critical thinking</li>
+                                        <li>Adaptability</li>
+                                        <li>Organization</li>
+                                        <li>Optimizer</li>
+                                        <li>Willingness to learn</li> 
+                                        <li>English B2</li>
+                                        <li>Spanish C1</li>  
+                                    </ul>
+                                </div>
+
+                                <!-- SKILL 2 -->
+                                <div class="skills__content skills__close">
+                                    <div class="skills__header">
+                                        <i class="uil uil-brackets-curly skills__icon"></i>
+        
+                                        <div>
+                                            <h1 class="skills__title">Technical</h1>
+                                            
+                                        </div>
+                                        <i class="uil uil-angle-down skills__arrow"></i>
+                                    </div>
+        
+                                    <div class="skills__list">
+                                        <h4 class="title__tool">Frontend Developer :</h4>
+                                        
+                                        <div class="skills__list__list">
+                                            <div>
+                                                -Advanced:
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>Web Responsive</li>
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                -Intermediate:
+                                                <ul>
+                                                    <li>SASS/SCSS</li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                -Novice:
+                                                <ul>
+                                                    <li>Javascript</li>
+                                                    <li>Bootstrap 5</li>
+                                                </ul>    
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skills__list">
+                                        <h4 class="title__tool">Developer Tools :</h4>
+                                        
+                                        <div class="skills__list__list">
+                                            <div>
+                                                -Advanced:
+                                                <ul>
+                                                    <li>VSCode</li>
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                -Intermediate:
+                                                <ul>
+                                                    <li></li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                -Novice:
+                                                <ul>
+                                                    <li>Git - GitHub</li>
+                                                </ul>    
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- SKILL 3 -->
+                                <div class="skills__content skills__close">
+                                    <div class="skills__header">
+                                        <i class="uil uil-constructor skills__icon"></i>
+    
+                                        <div>
+                                            <h1 class="skills__title">Work experience</h1>
+                                            
+                                        </div>
+                                        <i class="uil uil-angle-down skills__arrow"></i>
+                                    </div>
+    
+                                    <div class="skills__list">
+                                        
+                                        <div class="work__template">
+                                            <h3 class="qualification__title">Miller CNC</h3>
+                                            <span class="qualification__subtitle">MCN</span>
+        
+                                            <div class="qualification__calendar">
+                                                <i class="uil uil-calendar-alt"></i>
+                                                09/2019 - Present
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- MODAL GOALS -->
+                <div class="modal" id="myModal3">
+                    <!-- Modal content -->
+                    <div class="modal__content__goals">
+
+                        <div class="modal__header">
+                            <span class="close">×</span>
+                            <h2>Goals</h2>
+                        </div>
+
+                        <p class="modal__upgrade">Last update: 23/01/2022</p>
+
+                        <div class="modal__body">
+                            <p>I am currently studying to become a web developer.</p> 
+                            <p>I'm aiming to become a 
+                               <strong>senior full stack</strong> .</p>
+                            <p>Once that path is over, I'd like to take care of improving the <strong>performance</strong> , <strong>SEO </strong>and <strong>security</strong> of the sites.</p>
+                            <p>I really like the <strong>cybersecurity</strong>  side so I'll specialize in that as well.</p>
+                            <p>Another topic that I would like to study and deepen are <strong>applications</strong>  (android / OS).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKS -->
+        <section class="works section" id="work">
+            <div class="wrapper__work">
+                <h2 class="section__title">Works</h2>
+                <div class="container__subtitle">
+                            
+                    <div class="section__subtitle">S</div>
+                    <div class="section__subtitle">t</div>
+                    <div class="section__subtitle">u</div>
+                    <div class="section__subtitle">f</div>
+                    <div class="section__subtitle">f</div>
+                    <div class="section__subtitle">&nbsp;</div>
+                    
+                    <div class="section__subtitle">i</div>
+                    <div class="section__subtitle">'</div>
+                    <div class="section__subtitle">v</div>
+                    <div class="section__subtitle">e</div>
+                    
+                    <div class="section__subtitle">&nbsp;</div>
+                    <div class="section__subtitle">b</div>
+                    <div class="section__subtitle">u</div>
+                    <div class="section__subtitle">i</div>
+                    <div class="section__subtitle">l</div>
+                    <div class="section__subtitle">t</div>
+                    
+                        
+                </div>
+                <div class="content__work">
+                
+                    
+                    <input type="radio" id="All" name="categories" value="All" checked>
+
+                    <input type="radio" id="HTML" name="categories" value="HTML">
+
+                    <input type="radio" id="CSS" name="categories" value="CSS">
+
+                    <input type="radio" id="JavaScript" name="categories" value="JavaScript">
+
+                    <input type="radio" id="Sass" name="categories" value="Sass">
+
+                    <input type="radio" id="Bootstrap" name="categories" value="Bootstrap">
+
+                    <input type="radio" id="React" name="categories" value="React">
+
+                    <input type="radio" id="Node.js" name="categories" value="Node.js">
+
+                    <input type="radio" id="MySQL" name="categories" value="MySQL">
+
+                    <input type="radio" id="WordPress" name="categories" value="WordPress">
+
+                    
+                    <div class="filters">
+                        <h3>Filter :</h3>
+                        <div class="button__filter">
+                            <label for="All" title="ALL">
+                                SHOW ALL
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="HTML" title="HTML">
+                                HTML
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="CSS" title="CSS">
+                                CSS
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="JavaScript" title="JAVASCRIPT">
+                                JAVASCRIPT
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="Sass" title="SASS - SCSS">
+                                SASS
+                        </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="Bootstrap" title="BOOTSTRAP">
+                                BOOTSTRAP
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="React" title="REACT">
+                                REACT
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="Node.js" title="NODE.JS">
+                                NODE.JS
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="MySQL" title="MYSQL">
+                                MYSQL
+                            </label>
+                        </div>
+                        <div class="button__filter">
+                            <label for="WordPress" title="WORDPRESS">
+                                WORDPRESS
+                            </label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="posts">
+
+                        <!-- <div class="tutorial">
+
+                        How to add a job :
+
+                        1.Select in the data-category the programs used in the job.
+
+                        2.Follow the structure of the other jobs.
+
+                        3.Add the right icons in the "post__categories" for visual feedback =
+
+                        HTML
+                        <i class="fa-brands fa-html5"></i>
+
+                        CSS
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                        JS
+                        <i class="fa-brands fa-js"></i>
+
+                        SASS
+                        <i class="fa-brands fa-sass"></i>
+
+                        BOOTSTRAP
+                        <i class="fa-brands fa-bootstrap"></i>
+
+                        REACT
+                        <i class="fa-brands fa-react"></i>
+
+                        NODE.JS
+                        <i class="fa-brands fa-node"></i>
+
+                        MYSQL
+                        <i class="fa-solid fa-database"></i>
+
+                        WORDPRESS
+                        <i class="fa-brands fa-wordpress-simple"></i>
+                        
+                        </div> -->
+
+                        <div class="post" data-category="   HTML CSS JavaScript">
+                            <div class="image__post">
+                                
+                                <img src="/assets/img/work__portfolio.PNG" alt="portfolio img">
+                                
+                            </div>
+
+                            <div class="content__post">
+                                <div class="header__post">
+                                    <h2>Portfolio</h2>
+                                    <div class="header__icons__post">
+                                        <a href="https://github.com/Novecento201/Marco-Lovato-Page" class="" target="_blank">
+                                            <i class="uil uil-github-alt icons__post "></i>
+                                        </a>
+                                        <a href="" class="" target="_blank">
+                                            <i class="uil uil-eye icons__post"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <p class="text__post">
+                                    My first project ever.
+                                    <br>
+                                    My first time working with technologies like <strong>HTML</strong>, <strong>CSS</strong> and <strong>JS</strong>.
+                                </p>
+
+                                <div class="post__categories">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <div class="wrapper__contact">
+                <h2 class="section__title">Contact</h2>
+                <div class="container__subtitle">
+                            
+                    <div class="section__subtitle">G</div>
+                    <div class="section__subtitle">e</div>
+                    <div class="section__subtitle">t</div>
+                    <div class="section__subtitle">&nbsp;</div>
+                    
+                    <div class="section__subtitle">i</div>
+                    <div class="section__subtitle">n</div>
+                    
+                    <div class="section__subtitle">&nbsp;</div>
+                    <div class="section__subtitle">t</div>
+                    <div class="section__subtitle">o</div>
+                    <div class="section__subtitle">u</div>
+                    <div class="section__subtitle">c</div>
+                    <div class="section__subtitle">h</div>
+                        
+                </div>
+
+                <div class="content__contact">
+                    
+                    <div class="text__contact">
+                        <p>I’m currently looking for a job as web developer.</p>
+                        <p>My inbox is always open, whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+                    </div>
+
+                    <div class="container__information">
+                        <div class="contact__information">
+                            <i class="uil uil-whatsapp contact__icon" ></i>
+
+                            <div>
+                                <h3 class="contact__title">Text me</h3>
+                                <span class="contact__subtitle">
+                                    <a href="https://wa.me/+393292027244" target="_blank">+39  329 202 7244</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-at contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">
+                                    <a href="mailto:marcolovatoword@gmail.com" >marcolovatowork@</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">
+                                    <a href="https://www.google.com/maps/place/36072+Chiampo,+Province+of+Vicenza/@45.5523709,11.2489756,13z/data=!3m1!4b1!4m5!3m4!1s0x477f4ee9b2abe449:0xb1d15342fcbf2ee!8m2!3d45.5457622!4d11.2774926" target="_blank">Italy - Chiampo (VI)</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <form action="https://formsubmit.co/marcolovatowork@gmail.com" class="form__contact" method="post" id="form">
+
+                        <div class="form__div">
+                            <input name="name" type="text" class="form__input" placeholder=" " required>
+                            <label for="" class="form__label">Name</label>
+                        </div>
+
+                        <div class="form__div">
+                            <input name="email" type="email" class="form__input" placeholder=" " required>
+                            <label for="" class="form__label">Email</label>
+                        </div>
+
+                        <div class="form__div">
+                            <textarea autocomplete="nope" autocorrect="off" name="message" class="form__input  textarea__contact " placeholder=" "  required></textarea>
+                            <label for="" class="form__label">Message</label>
+                        </div>
+
+                        <input type="submit" class="form__button button" value="Send">
+
+                        <input type="text" name="_honey" style="display:none">
+
+                        <input type="hidden" name="_next" value="https://marcolovatopage.netlify.app/">
+
+                    </form>
+                    
+                </div>
+            </div>     
+        </section>
+    </main>  
+
+    
+    <footer class="footer" id="footer">
+
+        <!-- WAVES SVG -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--first-color)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="var(--first-color)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--first-color)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--first-color)"/>
+            </g>
+        </svg>
+
+        <div class="content__footer">
+            <div class="socials">
+
+                <div class="icon__fornomove">
+                    <a href="https://github.com/Novecento201" target="_blank" class="icon__footer"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <div class="icon__fornomove">
+                    <a href="https://www.linkedin.com/in/marco-lovato-3816a3229/"  target="_blank"class="icon__footer" ><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+                <div class="icon__fornomove">
+                    <a href="https://discordapp.com/users/744882319717826620"  target="_blank"class="icon__footer" ><i class="fab fa-discord"></i></a>
+                </div>
+
+            </div>
+            <p class="text__copy"> &copy; 2022 | Designed and coded by Marco Lovato </p>
+        </div>
+       
+    </footer>      
+            
+
+</body>
+
+<!-- JS -->
+<script src="assets/js/index.js"></script>
+
+<!-- SWIPER JS -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- SWIPER SLIDER CARDS -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,   
+    initialSlide : 1,
+    pagination: {
+          el: ".swiper-pagination",
+          clickable:true,
+        }
+});
+</script>  
+
+<!-- IONIC.IO -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
