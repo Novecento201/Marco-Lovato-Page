@@ -740,6 +740,7 @@ h3 {
   padding: 1rem;
   background-color: var(--body-color);
   max-width: 1000px;
+  box-shadow: 0 0px 10px var(--body-color);
 }
 .modal__content__skills {
   position: relative;
@@ -757,6 +758,7 @@ h3 {
   padding: 1rem;
   background-color: var(--body-color);
   max-width: 450px;
+  box-shadow: 0 0px 10px var(--body-color);
 }
 .modal__content__goals {
   position: relative;
@@ -774,6 +776,7 @@ h3 {
   padding: 1rem;
   background-color: var(--body-color);
   max-width: 450px;
+  box-shadow: 0 0px 10px var(--body-color);
 }
 
 .modal__body p {
@@ -925,9 +928,14 @@ h3 {
   margin-left: 1.5rem;
   list-style: inside;
   list-style-type: square;
+  font-weight: 400;
+}
+.skills__list__list div {
+  font-weight: 600;
 }
 .title__tool {
   color: var(--first-color);
+  font-size: 18px;
 }
 
 .skills__titles {
@@ -1105,7 +1113,7 @@ input[type="radio"] {
 }
 .content__post {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1150,7 +1158,9 @@ input[type="radio"] {
 }
 
 /* CONTACT ME  */
-
+.contact {
+  overflow: hidden;
+}
 .text__contact {
   margin: 1rem 3rem;
   text-align: center;
@@ -1594,7 +1604,7 @@ select:-webkit-autofill:focus {
     align-items: flex-start;
     position: relative;
     top: 50px;
-    margin: 0 4rem 0 0;
+    margin: 0 4rem 2rem 0;
     max-width: 400px;
   }
   .text__about {
@@ -1943,7 +1953,7 @@ select:-webkit-autofill:focus {
     margin-top: 1rem;
   }
   #theme-button {
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
   .social__icons__header {
     display: none;
@@ -1958,5 +1968,11 @@ select:-webkit-autofill:focus {
   .home::after,
   .home::before {
     bottom: -0.5em;
+  }
+}
+/* smartphone with low height */
+@media screen and (max-height: 700px) {
+  .home {
+    margin-top: 1rem;
   }
 }
