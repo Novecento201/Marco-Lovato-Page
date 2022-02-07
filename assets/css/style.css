@@ -1174,7 +1174,7 @@ input[type="radio"] {
 }
 .container__information {
   margin: 2rem auto;
-  width: 250px;
+  width: 210px;
 }
 
 .contact__icon {
@@ -1240,7 +1240,7 @@ input[type="radio"] {
 .form__label {
   position: absolute;
   left: 0.6rem;
-  top: 0.6rem;
+  top: 0.7rem;
   padding: 0 0.25rem;
   background-color: var(--body-color);
   color: var(--first-color);
@@ -1709,7 +1709,7 @@ select:-webkit-autofill:focus {
 @media screen and (min-width: 1300px) {
   /* MULTICLASS */
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .section__title {
@@ -1754,12 +1754,15 @@ select:-webkit-autofill:focus {
 
   /* ABOUT ME */
   .text__about a {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
   .modal {
     padding: 100px;
   }
   .modal__body p strong {
+    font-size: 22px;
+  }
+  .title__tool {
     font-size: 22px;
   }
   /* WORK */
