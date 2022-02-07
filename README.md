@@ -2,8 +2,8 @@
 
 # Marco Lovato Page
 
-This is my first personal work. <br>
-I made it as my first <a href="https://www.start2impact.it/" target="_blank">Start2Impact</a> student assignment. <br>
+This is my first personal work , [watch it here](https://marcolovatopage.netlify.app/?target=_blank).  <br>
+I made it as my first [Start2Impact](https://www.start2impact.it/?target=_blank) student assignment. <br>
  The exercise involves the use of HTML and CSS. <br>
 I added JS to make the site more dynamic for long-term use. <br>
 
