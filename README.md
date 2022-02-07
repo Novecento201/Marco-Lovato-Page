@@ -20,8 +20,7 @@ I added JS to make the site more dynamic for long-term use. <br>
 
 ## The animations and effects
 
-List in order:
-- The possibility of dark theme in the header
+- The dark theme in the header.
 - The letters "Marco" in the home section.
 - The carousel word's in the home section.
 - The subtitles in the sections with an effect on hover done with animate.css .
