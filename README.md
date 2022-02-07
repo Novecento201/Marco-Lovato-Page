@@ -3,7 +3,7 @@
 # Marco Lovato Page
 
 This is my first personal work. <br>
-I made it as my first [Start2Impact](https://www.start2impact.it/) student assignment. <br>
+I made it as my first <a href="https://www.start2impact.it/" target="_blank">Start2Impact</a> student assignment. <br>
  The exercise involves the use of HTML and CSS. <br>
 I added JS to make the site more dynamic for long-term use. <br>
 
